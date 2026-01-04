@@ -1,0 +1,22 @@
+module "gke-cluster" {
+    source = "../../modules/gke-cluster"
+    project_id = var.project_id
+    region = var.region
+    subnet_cidr = var.subnet_cidr
+    pods_cidr = var.pods_cidr
+    services_cidr = var.services_cidr
+    enable_nat = var.enable_nat
+    nat_ip_count = var.nat_ip_count
+    nat_min_ports_per_vm = var.nat_min_ports_per_vm
+    gke_cluster_name = var.gke_cluster_name
+    master_ipv4_cidr_block = var.master_ipv4_cidr_block
+    enable_private_endpoint = var.enable_private_endpoint
+    master_authorized_cidrs = var.master_authorized_cidrs
+    release_channel = var.release_channel
+    enable_network_policy = var.enable_network_policy
+    node_count = var.node_count
+    machine_type = var.machine_type
+    node_network_tags = var.node_network_tags
+    node_labels = var.node_labels
+    node_service_account_email = var.node_service_account_email
+}

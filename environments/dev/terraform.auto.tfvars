@@ -1,0 +1,23 @@
+project_id = "playground-482720"
+region = "us-central1"
+subnet_cidr = "10.0.0.0/16"
+pods_cidr = "10.1.0.0/16"
+services_cidr = "10.2.0.0/16"
+enable_nat = true
+nat_ip_count = 1
+nat_min_ports_per_vm = 2048
+gke_cluster_name = "my-gke-cluster"
+master_ipv4_cidr_block = "10.3.0.0/28"
+enable_private_endpoint = false
+master_authorized_cidrs = [{
+    cidr = "68.108.198.34/32"
+    name = "my-mac-ipv4"
+  }]
+release_channel = "REGULAR"
+enable_network_policy = true
+node_count = 1
+machine_type = "e2-standard-2"
+node_network_tags = ["gke-node"]
+node_labels = {}
+node_service_account_email = null
+credentials_file = "/Users/kpgarage/Desktop/SRE/Terraform/new_projects/playground-482720-0070f20c8a0e.json"
